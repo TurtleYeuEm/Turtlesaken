@@ -56,16 +56,16 @@ fade.BackgroundTransparency = 1
 fade.ZIndex = 1000
 
 -- Key system
-local key = "turtleyeuem"
+local key = ""
 local userKey = game:GetService("Players").LocalPlayer.Name.."_KeyUsed"
 if not _G[userKey] then
 	gui.Enabled = true
 	frame.Visible = true
-	status.Text = "🔐 Enter Key: turtleyeuem in the script!"
+	status.Text = "🔐 Enter Key: in the script!"
 	button.Text = "Key Required"
 	button.BackgroundColor3 = Color3.fromRGB(255, 40, 40)
 	button.MouseButton1Click:Connect(function()
-		status.Text = "Wrong key. Edit the script and paste turtleyeuem."
+		status.Text = "Wrong key. Edit the script and paste."
 	end)
 	return
 else
